@@ -13,3 +13,7 @@ Se sube estructura basica de informacion mediante objetos y arreglo de objetos c
 
 Se sube estructura para despliegue de informacion descriptiva  y habilidades
 
+**v 0.4**
+
+Se sube estructura para despliegue de experiencia y formulario de comunicacion
+
