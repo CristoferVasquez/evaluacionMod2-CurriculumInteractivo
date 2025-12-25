@@ -17,3 +17,6 @@ Se sube estructura para despliegue de informacion descriptiva  y habilidades
 
 Se sube estructura para despliegue de experiencia y formulario de comunicacion
 
+**v 1**
+
+Se corrigen y agregan datos veridicos para presentacion

@@ -1,16 +1,33 @@
 const datosPersonales = [
-                    {nombre : "Cristofer Lizardo Vasquez Alave", 
-                    fechaNacimiento: '14-09-1991',
-                    telefono:'+56 9 90632321',
-                    correoElectronico: 'cristofervasquezalave@gmail.com '}
+    {
+    nombre : "Cristofer Lizardo Vasquez Alave", 
+    fechaNacimiento: '14-09-1991',
+    telefono:'+56 9 90632321',
+    correoElectronico: 'cristofervasquezalave@gmail.com '
+    }
 ];
 
 const datosEducacion = [
-    {estudio: 'Analista programador', lugar: 'Inacap'},
-    {estudio: 'Ingenieria en informatica', lugar: 'Inacap'},
-    {estudio: 'Certificado Fullstack Javascript/Node.js', lugar: 'DUOC UC'},
-    {estudio: 'Certificado Fullstack Python', lugar : 'Praxis'},
-    {estudio: 'Certificado Desarrollo web', lugar : 'AIEP'}
+    {
+    estudio: 'Analista programador', 
+    lugar: 'Inacap'
+    },
+    {
+    estudio: 'Ingenieria en informatica', 
+    lugar: 'Inacap'
+    },
+    {
+    estudio: 'Certificado Fullstack Javascript/Node.js', 
+    lugar: 'DUOC UC'
+    },
+    {
+    estudio: 'Certificado Fullstack Python', 
+    lugar : 'Praxis'
+    },
+    {
+    estudio: 'Certificado Desarrollo web', 
+    lugar : 'AIEP'
+    }
 ];
 
 
@@ -18,31 +35,43 @@ const experienciaLaboral = [
   {
     cargo: "Administrativo Informático",
     empresa: "Colegio Saucache",
-    fechaInicio: "11-11-2022",
-    fechaTermino: "11-11-2023",
+    fechaInicio: "2014",
+    fechaTermino: "2017",
     descripcion: "Soporte técnico, gestión de sistemas internos y apoyo administrativo."
   },
   {
     cargo: "Operador",
     empresa: "Inacap",
-    fechaInicio: "01-03-2021",
-    fechaTermino: "30-06-2022",
+    fechaInicio: "2017",
+    fechaTermino: "2020",
     descripcion: "Soporte técnico, operación y mantenimiento de sistemas académicos."
   },
   {
     cargo: "Desarrollador Backend",
     empresa: "ValpoSystems",
-    fechaInicio: "01-08-2023",
-    fechaTermino: "Actualidad",
+    fechaInicio: "2021",
+    fechaTermino: "2023",
     descripcion: "Desarrollo de APIs REST con Springboot, C# y bases de datos."
   }
 ];
 
 const habilidades = [   
-    { nombre: "Java", nivel: "Intermedio"},         
-    { nombre: "Python", nivel: "Intermedio"},           
-    { nombre: "JavaScript", nivel: "Avanzado"},        
-    { nombre: "Git", nivel: "Intermedio"}
+    {
+    nombre: "Java", 
+    nivel: "Intermedio"
+    },         
+    {
+    nombre: "Python", 
+    nivel: "Intermedio"
+    },           
+    { 
+    nombre: "JavaScript",
+    nivel: "Avanzado"
+    },        
+    { 
+    nombre: "Git", 
+    nivel: "Intermedio"
+    }
 ];
 
 const descripcion = 'Desarrollador Backend con experiencia en mantenimiento de equipos, soporte TI y desarrollo de aplicaciones. Me destaco por mi capacidad analítica, enfoque metódico y actitud resiliente. Cuento con conocimientos sólidos en Java, Python y JavaScript, además del manejo de bases de datos relacionales como MySQL y Oracle. Comprometido con el aprendizaje continuo y la mejora de procesos, busco aportar soluciones efectivas y escalables en entornos colaborativos';
@@ -141,7 +170,7 @@ $("#experiencia-content").html(experienciaHTML);
     }
   });
 
-  /* 🔹 Envío del formulario */
+
   $("#contactForm").on("submit", function (e) {
     e.preventDefault();
 
@@ -150,11 +179,11 @@ $("#experiencia-content").html(experienciaHTML);
       $("#titulo").val().trim() !== "" &&
       $("#mensaje").val().trim().length >= 10
     ) {
-      alert("Mensaje enviado correctamente ✅");
+      alert("Mensaje enviado correctamente");
       this.reset();
       $(".form-control").removeClass("is-valid");
     } else {
-      alert("Por favor corrige los errores del formulario ❌");
+      alert("Por favor corrige los errores del formulario");
     }
   });
 
