@@ -5,136 +5,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum Vitae</title>
     <link rel="stylesheet" href="assets/css/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header>
-          <div class="container-fluid my-4">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="#">
-        <img src="assets/img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-        Cristofer Vasquez 
-    </a>
-    <div class="collapse navbar-collapse " id="navbarNav">
-    <ul class="navbar-nav ">
-        <li class="nav-item">
-        <a class="nav-link" href="#">
-        Inicio  
-        </a>
-        </li>
-          <li class="nav-item">
-    <a class="nav-link toggle-section" data-target="#habilidades-content" href="#">
-      Habilidades
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link toggle-section" data-target="#estudios-content" href="#">
-      Estudios
-    </a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link toggle-section" data-target="#experiencia-content" href="#">
-      Experiencia
-    </a>
-  </li>
-    </ul>
-    </div>
-    </nav>
-  <div>
+    <div class="container-fluid my-4">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="#">
+            <img src="assets/img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            Cristofer Vasquez 
+            </a>
+        <div class="collapse navbar-collapse " id="navbarNav">
+        <ul class="navbar-nav ">
+            <li class="nav-item">
+            <a class="nav-link" href="#">
+            Inicio  
+            </a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link toggle-section" data-target="#habilidades-content" href="#">
+            Habilidades
+            </a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link toggle-section" data-target="#estudios-content" href="#">
+            Estudios
+            </a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link toggle-section" data-target="#experiencia-content" href="#">
+            Experiencia
+            </a>
+            </li>
+        </ul>
+        </div>
+        </nav>
+    <div>
     </header>
-<main class="pt-5">
-
-  
-    <section name="datospersonales" class="section-spacing">
-  <div class="container">
-    <div class="row justify-content-center align-items-stretch">
-
- 
-      <div class="col-md-4 mb-3">
-        <div class="card shadow border-0 h-100 text-center">
-          <div class="card-header bg-dark text-white">
-            <h5 class="mb-0">Foto</h5>
-          </div>
-
-          <div class="card-body d-flex flex-column justify-content-center">
-            <img 
-              src="assets/img/foto_perfil.png"
-              alt="Foto de perfil"
-              class="img-fluid rounded-circle mb-3 mx-auto"
-              style="max-width: 150px;"
-            >
-          </div>
+    <main class="pt-5">
+        <section name="datospersonales" class="section-spacing">
+            <div class="container">
+                <div class="row justify-content-center align-items-stretch">
+                <div class="col-md-4 mb-3">
+                <div class="card shadow border-0 h-100 text-center">
+                <div class="card-header bg-dark text-white">
+                <h5 class="mb-0">Foto</h5>
+                </div>
+                <div class="card-body d-flex flex-column justify-content-center">
+                <img src="assets/img/foto_perfil.png" alt="Foto de perfil" class="img-fluid rounded-circle mb-3 mx-auto" style="max-width: 150px;">
+                </div>
+                </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                <div class="card shadow border-0 h-100">
+                <div class="card-header bg-dark text-white text-center">
+                <h4 class="mb-0">Perfil Personal</h4>
+                </div>
+                <div class="card-body px-4 py-3">
+                <p class="mb-2">
+                <strong>Nombre:</strong>
+                <span id="nombre" class="ms-2"></span>
+                </p>
+                <p class="mb-2">
+                <strong>Fecha de nacimiento:</strong>
+                <span id="fechaNacimiento" class="ms-2"></span>
+                </p>
+                <p class="mb-2">
+                <strong>Teléfono:</strong>
+                <span id="telefono" class="ms-2"></span>
+                </p>
+                <p class="mb-0">
+                <strong>Correo:</strong>
+                <span id="correo" class="ms-2"></span>
+                </p>
+                </div>
+                </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section name="descripcion" class="section-spacing">
+            <div class="container">
+                <hr>
+                <h4 class="section-title">Descripción Profesional</h4>
+                <p class="mb-0">
+                <span id="descripcionProfesional" class="ms-2"></span>
+                </p>
+                <hr>
+            </div>
+        </section>
+        <section name="habilidades" class="section-spacing">
+        <div class="container">
+            <hr>
+            <h4 class="section-title toggle-section" data-target="#habilidades-content" data-icon="#icon-habilidades" style="cursor:pointer">
+            Habilidades <span id="icon-habilidades">▼</span>
+            </h4>
+            <hr>
+            <div id="habilidades-content" class="collapse-content"></div>
         </div>
-      </div>
+        </section>
 
-
-      <div class="col-md-6 mb-3">
-        <div class="card shadow border-0 h-100">
-          <div class="card-header bg-dark text-white text-center">
-            <h4 class="mb-0">Perfil Personal</h4>
-          </div>
-
-          <div class="card-body px-4 py-3">
-            <p class="mb-2">
-              <strong>Nombre:</strong>
-              <span id="nombre" class="ms-2"></span>
-            </p>
-
-            <p class="mb-2">
-              <strong>Fecha de nacimiento:</strong>
-              <span id="fechaNacimiento" class="ms-2"></span>
-            </p>
-
-            <p class="mb-2">
-              <strong>Teléfono:</strong>
-              <span id="telefono" class="ms-2"></span>
-            </p>
-
-            <p class="mb-0">
-              <strong>Correo:</strong>
-              <span id="correo" class="ms-2"></span>
-            </p>
-          </div>
+        <section name="estudios" class="section-spacing">
+        <div class="container">
+            <hr>
+            <h4 class="section-title toggle-section" data-target="#estudios-content" data-icon="#icon-estudios" style="cursor:pointer">
+            Estudios <span id="icon-estudios">▼</span>
+            </h4>
+            <hr>
+            <div id="estudios-content" class="collapse-content"></div>
         </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-    <section name="descripcion" class="section-spacing">
-      <div class="container">
-        <h4 class="section-title">Descripción Profesional</h4>
-        <hr>
-      </div>
-    </section>
-
-
-    <section name="habilidades" class="section-spacing">
-      <div class="container">
-        <h4 class="section-title">Habilidades</h4>
-        <hr>
-      </div>
-    </section>
-
-
-    <section name="estudios" class="section-spacing">
-      <div class="container">
-        <h4 class="section-title">Estudios</h4>
-        <hr>
-      </div>
-    </section>
-
-
-    <section name="experiencia" class="section-spacing">
-      <div class="container">
-        <h4 class="section-title">Experiencia</h4>
-        <hr>
-      </div>
-    </section>
-
-  </main>
+        </section>
+        <section name="experiencia" class="section-spacing">
+            <div class="container">
+            <hr>
+            <h4 class="section-title">Experiencia</h4>
+            <hr>
+            </div>
+        </section>
+        <section name="contact-form" class="section-spacing">
+            <div class="container">
+            <hr>
+            <h4 class="section-title">Quieres comunicarte conmigo ?</h4>
+            <hr>
+            </div>
+        </section>
+    </main>
     <footer></footer>
 <script src="assets/js/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/jquery-3.7.1.min.js"></script>
