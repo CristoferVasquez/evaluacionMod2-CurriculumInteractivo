@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum Vitae</title>
     <link rel="stylesheet" href="assets/css/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header>
@@ -86,25 +86,46 @@
         </section>
         <section name="descripcion" class="section-spacing">
             <div class="container">
+                <hr>
                 <h4 class="section-title">Descripción Profesional</h4>
+                <p class="mb-0">
+                <span id="descripcionProfesional" class="ms-2"></span>
+                </p>
                 <hr>
             </div>
         </section>
         <section name="habilidades" class="section-spacing">
-            <div class="container">
-            <h4 class="section-title">Habilidades</h4>
+        <div class="container">
             <hr>
+            <h4 class="section-title toggle-section" data-target="#habilidades-content" data-icon="#icon-habilidades" style="cursor:pointer">
+            Habilidades <span id="icon-habilidades">▼</span>
+            </h4>
+            <hr>
+            <div id="habilidades-content" class="collapse-content"></div>
         </div>
         </section>
+
         <section name="estudios" class="section-spacing">
-            <div class="container">
-            <h4 class="section-title">Estudios</h4>
+        <div class="container">
             <hr>
-            </div>
+            <h4 class="section-title toggle-section" data-target="#estudios-content" data-icon="#icon-estudios" style="cursor:pointer">
+            Estudios <span id="icon-estudios">▼</span>
+            </h4>
+            <hr>
+            <div id="estudios-content" class="collapse-content"></div>
+        </div>
         </section>
         <section name="experiencia" class="section-spacing">
             <div class="container">
+            <hr>
             <h4 class="section-title">Experiencia</h4>
+            <hr>
+            </div>
+        </section>
+        <section name="contact-form" class="section-spacing">
+            <div class="container">
+            <hr>
+            <h4 class="section-title">Quieres comunicarte conmigo ?</h4>
             <hr>
             </div>
         </section>
